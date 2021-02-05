@@ -5,7 +5,8 @@ from tqdm import tqdm
 for i in tqdm(range(10)):
     time.sleep(0.1)
 
-print("Made by Pancakes#4891")
+print('''Made by Pancakes#4891
+and laika#9603''')
 time.sleep(1)
 print('''╦ ╦┌─┐┌┐ ┬ ┬┌─┐┌─┐┬┌─  ┌┬┐┌─┐┌─┐┬  ┌─┐
 ║║║├┤ ├┴┐├─┤│ ││ │├┴┐   │ │ ││ ││  └─┐
@@ -33,6 +34,7 @@ def main():
         time.sleep(wait)
         for x in range(amount):
             r = requests.post(hook, json=data,headers=headers)
+            print("done sending",amount,"messages")
             if r.status_code == 200:
               print("sent message successfully")
         main()
